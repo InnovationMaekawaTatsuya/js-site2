@@ -85,3 +85,31 @@ section {
     background-color : #fff;
     color            : gray;
 }
+
+/* CourseList */
+#course-list .list .card {
+    text-align       : center;
+    padding          : 2rem;
+    background-color : #fff;
+}
+#course-list .list .card .img-area {
+    max-width : 300px;
+}
+#course-list .list .card .img-area img {
+    width         : 100%;
+    border-radius : 100px;
+}
+#course-list .list .card .text-area {
+    margin : 1rem 0;
+}
+#course-list .list .card .btn-area a {
+    padding          : 1rem 1.5rem;
+    background-color : rgb(255, 255, 32);
+    border-radius    : 30px;
+    color            : rgb(111, 111, 111);
+    font-weight      : 550;
+}
+#course-list .list .card .btn-area a:hover {
+    background-color : lightblue;
+    transition       : 1s;
+}
