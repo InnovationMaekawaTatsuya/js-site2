@@ -115,9 +115,6 @@ section {
 }
 
 /* Article List */
-#article-list .article-box {
-    display : flex;
-}
 #article-list .include-accordion {
     width            : 300px;
     padding          : 1.5rem;
@@ -204,4 +201,67 @@ section {
     text-align : center;
     margin-top : 5rem;
     color      : #fff;
+}
+
+/* sp画面 */
+@media screen and (max-width :900px) {
+    /* 設定 */
+    section {
+        margin : 2rem 0;
+    }
+    .wrapper {
+        padding : 0 1rem;
+    }
+    .section-title {
+        margin-bottom : 1rem;
+    }
+    .section-title span {
+        display : block;
+        color   : #fff;
+    }
+    .section-title .en {
+        font-size : 1.5rem;
+    }
+    .section-title .ja {
+        font-size : 1rem;
+    }
+}
+
+@media screen and (max-width :750px) {
+    /* 設定 */
+    .flex {
+        flex-direction : column-reverse;
+    }
+
+    /* About List */
+    #about-list .list li {
+        width : 50%;
+    }
+
+    /* Article List */
+    #article-list .include-accordion {
+        margin : 0;
+    }
+}
+
+@media screen and (max-width :500px) {
+    /* 設定 */
+    .flex {
+        flex-direction : column-reverse;
+    }
+
+    /* About List */
+    #about-list .list li {
+        width : 70%;
+    }
+
+    /* Course List & Recommend Books */
+    .list .card .img-area {
+        width : 200px;
+    }
+
+    /* Article List */
+    #article-list .include-accordion {
+        width : 200px;
+    }
 }
