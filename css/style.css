@@ -198,3 +198,10 @@ section {
     border-radius    : 30px;
     font-weight      : 550;
 }
+
+/* footer */
+#footer .copyright {
+    text-align : center;
+    margin-top : 5rem;
+    color      : #fff;
+}
