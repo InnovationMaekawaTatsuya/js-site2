@@ -15,14 +15,34 @@ ul {
 a {
     text-decoration : none;
 }
+section {
+    margin : 3rem 0;
+}
 .wrapper {
     max-width : 1200px;
     margin    : 0 auto;
+    padding   : 0 2rem;
 }
 .flex {
     display         : flex;
     justify-content : space-between;
     align-items     : center;
+}
+.none {
+    display : none;
+}
+.section-title {
+    margin-bottom : 1rem;
+}
+.section-title span {
+    display : block;
+    color   : #fff;
+}
+.section-title .en {
+    font-size : 2rem;
+}
+.section-title .ja {
+    font-size : 1rem;
 }
 
 /* ヘッダー */
@@ -44,4 +64,24 @@ a {
 #header .nav-area .list a:hover {
     transition : 0.5s;
     color      : rgb(116, 166, 252);
+}
+
+
+/* AboutList */
+#about-list .list li {
+    text-align       : center;
+    cursor           : pointer;
+    width            : 33.33%;
+    padding          : 1rem;
+    border           : 2px solid lightgray;
+    background-color : #fff;
+    color            : gray;
+}
+#about-list .panel-group .list .panel {
+    text-align       : center;
+    width            : calc(100% - 2rem - 4px);
+    padding          : 1rem;
+    border           : 2px solid lightgray;
+    background-color : #fff;
+    color            : gray;
 }
