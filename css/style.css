@@ -186,3 +186,15 @@ section {
 #article-list ul.active { 
     overflow-y : auto;
 }
+
+/* TOPへ戻るボタン */
+#back-top-btn {
+    text-align : center;
+}
+#back-top-btn a {
+    padding          : 1rem 1.5rem;
+    background-color : #fff;
+    color            : rgb(27, 113, 205);
+    border-radius    : 30px;
+    font-weight      : 550;
+}
