@@ -1,0 +1,47 @@
+/* 設定 */
+html {
+    scroll-behavior : smooth;
+}
+* {
+    margin  : 0;
+    padding : 0;
+}
+body {
+    background : linear-gradient(to right, rgb(70, 157, 255), #fff);
+}
+ul {
+    list-style : none;
+}
+a {
+    text-decoration : none;
+}
+.wrapper {
+    max-width : 1200px;
+    margin    : 0 auto;
+}
+.flex {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+/* ヘッダー */
+#header {
+    padding : 1rem 2rem;
+}
+#header .logo-area a{
+    color     : #fff;
+    font-size : 3rem;
+}
+#header .nav-area .list {
+    display : flex;
+    gap     : 30px;
+}
+#header .nav-area .list a {
+    color       : gray;
+    font-weight : 550;
+}
+#header .nav-area .list a:hover {
+    transition : 0.5s;
+    color      : rgb(116, 166, 252);
+}
