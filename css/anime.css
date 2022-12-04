@@ -31,3 +31,8 @@
         opacity   : 0;
     }
 }
+
+/* モーダル */
+#modal {
+    display : none;
+}

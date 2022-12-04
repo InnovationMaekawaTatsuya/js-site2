@@ -2,16 +2,20 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jsSite2</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/anime.css">
+    <!-- Modal css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css"/>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <!-- Modal js -->
+     <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js" integrity="sha256-e8kfivdhut3LQd71YXKqOdkWAG1JKiOs2hqYJTe0uTk=" crossorigin="anonymous"></script>
     <!-- js -->
     <script src="../js/load.js"></script>
+    <script src="../js/modal.js"></script>
 </head>
 <body>
     <!-- ローディング -->
@@ -27,7 +31,18 @@
             <ul class="list">
                 <a href="#"><li>ブログ</li></a>
                 <a href="#"><li>書籍</li></a>
-                <a href="#"><li>お問い合わせ</li></a>
+                <a href="#modal" class="open"><li>お問い合わせ</li></a>
+                <div id="modal">
+                    <h4 class="title">お問い合わせ</h4>
+                    <p class="description">お困りの内容に近いカテゴリーを選択してください。</p>
+                    <ul class="list">
+                        <a href="#" id="about-site"><li>JsSiteについて</li></a>
+                        <a href="#" id="about-course"><li>学習コースについて</li></a>
+                        <a href="#" id="about-blog"><li>ブログについて</li></a>
+                        <a href="#" id="about-books"><li>紹介書籍について</li></a>
+                        <a href="#" id="else"><li>その他</li></a>
+                    </ul>
+                </div>
             </ul>
         </nav>
     </header>
