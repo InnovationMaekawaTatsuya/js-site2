@@ -1,0 +1,33 @@
+/* ローディング */
+#loading {
+    position         : fixed;
+    top              : 0;
+    left             : 0;
+    width            : 100vw;
+    height           : 100vh;
+    transition       : all 2s;
+    background-color : rgb(70, 124, 143);
+}
+.loaded {
+    /* 透明化 */
+    opacity    : 0; 
+    /* レイアウトには影響を及ぼすが透明になる */
+    visibility : hidden;
+}
+.spinner {
+    animation        : loading 1.0s infinite ease-in-out;
+    width            : 300px;
+    height           : 300px;
+    margin           : 200px auto;
+    border-radius    : 100%;
+    background-color : #fff;
+}
+/* keyframes → 参考　：　https://developer.mozilla.org/ja/docs/Web/CSS/@keyframes */
+@keyframes loading {
+    0% {
+        transform : scale(0);
+    } 100% {
+        transform : scale(1.0);
+        opacity   : 0;
+    }
+}
