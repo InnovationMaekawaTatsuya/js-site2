@@ -36,3 +36,43 @@
 #modal {
     display : none;
 }
+
+/* タブ切り替え */
+#main .is-show {
+    display : block;
+}
+#main .tab {
+    flex-grow  : 1;
+    border     : solid 1px #CCC;
+    text-align : center;
+}
+#main .panel {
+    display : none;
+}
+#main .is-active a {
+    color : rgb(56, 108, 171);
+}
+#main .panel-group .is-show {
+    display : block;
+}
+#main .panel-group .is-show {
+    text-align       : center;
+    width            : 100%;
+    padding          : 1rem 0;
+    border           : solid 1px #CCC;
+    background-color : #fff;
+    font-weight      : 550;
+}
+
+@media screen and (max-width :750px) {
+    #main .panel-group .list {
+        width  : 56%;
+        margin : 1rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width :500px) {
+    #main .panel-group .list {
+        width : 78%;
+    }
+}
