@@ -141,6 +141,8 @@ section {
     margin-left   : 15px;
     border-bottom : 1px dotted rgb(67, 128, 201);
     padding       : 10px 0 10px 10px;
+}
+#article-list .include-accordion li ul li a {
     color         : #fff;
 }
 #article-list .include-accordion:nth-of-type(1) li .active li:last-child {

@@ -64,9 +64,6 @@
     font-weight      : 550;
 }
 
-/* アコーディオン */
-
-
 @media screen and (max-width :900px) {
     /* ハンバーガーメニュー */
     #pc-header {
@@ -137,7 +134,7 @@
         padding    : 1rem 2.5rem;
         border-top : 1px solid #fff;
     }
-    #sp-header .hamburger-menu .list a {
+    #sp-header .hamburger-menu .list li a {
         color     : #fff;
         font-size : 0.8rem;
     }
