@@ -31,6 +31,9 @@ section {
 .none {
     display : none;
 }
+.pointer {
+    cursor : pointer;
+}
 .section-title {
     margin-bottom : 2rem;
 }
@@ -46,22 +49,25 @@ section {
 }
 
 /* ヘッダー */
-#header {
+#sp-header {
+    display : none;
+}
+#pc-header {
     padding : 1rem 2rem;
 }
-#header .logo-area a{
+#pc-header .logo-area a{
     color     : #fff;
     font-size : 3rem;
 }
-#header .nav-area .list {
+#pc-header .nav-area .list {
     display : flex;
     gap     : 30px;
 }
-#header .nav-area .list a {
+#pc-header .nav-area .list a {
     color       : gray;
     font-weight : 550;
 }
-#header .nav-area .list a:hover {
+#pc-header .nav-area .list a:hover {
     transition : 1s;
     color      : rgb(116, 166, 252);
 }
@@ -224,6 +230,32 @@ section {
     }
     .section-title .ja {
         font-size : 1rem;
+    }
+
+    /* ヘッダー */
+    #pc-header {
+        display : none;
+    }
+    #sp-header {
+        display          : block;
+        margin           : 0 auto;
+        padding          : 1rem 2rem;
+        background-color : #fff;
+    }
+    #sp-header .sp-header-flex {
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+    }
+    #sp-header .logo-area a {
+        color     : rgb(74, 74, 74);
+        font-size : 1.5rem;
+    }
+    #sp-header .img-area {
+        max-width : 30px;
+    }
+    #sp-header .img-area img {
+        width : 100%;
     }
 }
 

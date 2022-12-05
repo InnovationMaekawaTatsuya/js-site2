@@ -17,6 +17,7 @@
     <script src="../js/load.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/tab.js"></script>
+    <script src="../js/menu.js"></script>
 </head>
 <body>
     <!-- ローディング -->
@@ -24,28 +25,60 @@
         <div class="spinner"></div>
     </div>
 
-    <header id="header" class="wrapper flex">
-        <h1 class="logo-area">
-            <a href="#">Js Site2</a>
-        </h1>
-        <nav class="nav-area">
-            <ul class="list">
-                <a href="#"><li>ブログ</li></a>
-                <a href="#"><li>書籍</li></a>
-                <a href="#modal" class="open"><li>お問い合わせ</li></a>
-                <div id="modal">
-                    <h4 class="title">お問い合わせ</h4>
-                    <p class="description">お困りの内容に近いカテゴリーを選択してください。</p>
-                    <ul class="list">
-                        <a href="#" id="about-site"><li>JsSiteについて</li></a>
-                        <a href="#" id="about-course"><li>学習コースについて</li></a>
-                        <a href="#" id="about-blog"><li>ブログについて</li></a>
-                        <a href="#" id="about-books"><li>紹介書籍について</li></a>
-                        <a href="#" id="else"><li>その他</li></a>
-                    </ul>
+    <header id="header">
+        <div id="pc-header" class="wrapper flex">
+            <h1 class="logo-area">
+                <a href="#">Js Site2</a>
+            </h1>
+            <nav class="nav-area">
+                <ul class="list">
+                    <a href="#"><li>ブログ</li></a>
+                    <a href="#"><li>書籍</li></a>
+                    <a href="#modal" class="open"><li>お問い合わせ</li></a>
+                    <div id="modal">
+                        <h4 class="title">お問い合わせ</h4>
+                        <p class="description">お困りの内容に近いカテゴリーを選択してください。</p>
+                        <ul class="list">
+                            <a href="#" id="about-site"><li>JsSiteについて</li></a>
+                            <a href="#" id="about-course"><li>学習コースについて</li></a>
+                            <a href="#" id="about-blog"><li>ブログについて</li></a>
+                            <a href="#" id="about-books"><li>紹介書籍について</li></a>
+                            <a href="#" id="else"><li>その他</li></a>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div id="sp-header" class="sp-header">
+            <nav id="before-header" class="sp-header-menu">
+                <ul class="sp-header-flex">
+                    <li class="title">
+                        MENU
+                    </li>
+                    <li class="img-area">
+                        <img src="../images/menu.png" alt="">
+                    </li>
+                </ul>
+            </nav>
+            <nav id="hamburger-place" class="hamburger-none hamburger-menu">
+                <ul class="list">
+                    <a href="#"><li>ブログ</li></a>
+                    <a href="#"><li>書籍</li></a>
+                </ul>
+                <div class="checked-sp-header">
+                    <nav class="checked-sp-header-menu">
+                        <ul class="sp-header-flex">
+                            <li class="title">
+                                MENU
+                            </li>
+                            <li class="img-area">
+                                <img src="../images/menu.png" alt="">
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main id="main" class="wrapper">
         <section id="about-list">
