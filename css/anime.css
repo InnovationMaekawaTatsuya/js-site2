@@ -64,6 +64,9 @@
     font-weight      : 550;
 }
 
+/* アコーディオン */
+
+
 @media screen and (max-width :900px) {
     /* ハンバーガーメニュー */
     #pc-header {
