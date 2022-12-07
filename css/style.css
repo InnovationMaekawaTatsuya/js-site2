@@ -1,0 +1,301 @@
+/* 設定 */
+html {
+    scroll-behavior : smooth;
+}
+* {
+    margin  : 0;
+    padding : 0;
+}
+body {
+    background : linear-gradient(to right, rgb(70, 157, 255), #fff);
+}
+ul {
+    list-style : none;
+}
+a {
+    text-decoration : none;
+}
+section {
+    margin : 5rem 0;
+}
+.wrapper {
+    max-width : 1200px;
+    margin    : 0 auto;
+    padding   : 0 2rem;
+}
+.flex {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+.none {
+    display : none;
+}
+.pointer {
+    cursor : pointer;
+}
+.section-title {
+    margin-bottom : 2rem;
+}
+.section-title span {
+    display : block;
+    color   : #fff;
+}
+.section-title .en {
+    font-size : 2rem;
+}
+.section-title .ja {
+    font-size : 1rem;
+}
+
+/* ヘッダー */
+#sp-header {
+    display : none;
+}
+#pc-header {
+    padding : 1rem 2rem;
+}
+#pc-header .logo-area a{
+    color     : #fff;
+    font-size : 3rem;
+}
+#pc-header .nav-area .list {
+    display : flex;
+    gap     : 30px;
+}
+#pc-header .nav-area .list a {
+    color       : gray;
+    font-weight : 550;
+}
+#pc-header .nav-area .list a:hover {
+    transition : 1s;
+    color      : rgb(116, 166, 252);
+}
+
+
+/* About List */
+#about-list .list li {
+    text-align       : center;
+    cursor           : pointer;
+    width            : 33.33%;
+    padding          : 1rem;
+    border           : 2px solid lightgray;
+    background-color : #fff;
+    color            : gray;
+}
+#about-list .panel-group .list .panel {
+    text-align       : center;
+    width            : calc(100% - 2rem - 4px);
+    padding          : 1rem;
+    border           : 2px solid lightgray;
+    background-color : #fff;
+    color            : gray;
+}
+
+/* Course List　& Article List */
+.list .card {
+    text-align       : center;
+    padding          : 2rem;
+    background-color : #fff;
+}
+.list .card .img-area {
+    max-width : 300px;
+}
+.list .card .img-area img {
+    width         : 100%;
+    border-radius : 100px;
+}
+.list .card .text-area {
+    margin : 1rem 0;
+}
+.list .card .btn-area a {
+    padding          : 1rem 1.5rem;
+    background-color : rgb(255, 255, 32);
+    color            : rgb(111, 111, 111);
+    border-radius    : 30px;
+    font-weight      : 550;
+}
+.list .card .btn-area a:hover {
+    transition       : 1s;
+    background-color : lightblue;
+}
+
+/* Article List */
+#article-list .include-accordion {
+    width            : 300px;
+    padding          : 1.5rem;
+    margin           : 0 0 2rem 2rem;
+    background-color : rgb(67, 128, 201);
+    color            : #fff;
+}
+#article-list .include-accordion li ul {
+    overflow         : hidden;
+    transition       : 1s;
+    height           : 0;
+    margin           : 0;
+    border-top       : 1px solid rgb(67, 128, 201);
+    padding          : 0;
+    background-color : rgb(67, 128, 201);
+}
+#article-list .include-accordion li ul li {
+    margin-left   : 15px;
+    border-bottom : 1px dotted rgb(67, 128, 201);
+    padding       : 10px 0 10px 10px;
+}
+#article-list .include-accordion li ul li a {
+    color         : #fff;
+}
+#article-list .include-accordion:nth-of-type(1) li .active li:last-child {
+    border-bottom : 1px solid rgb(67, 128, 201); 
+}
+#article-list .include-accordion li button {
+    position         : relative;
+    text-align       : left;
+    cursor           : pointer;
+    width            : 100%;
+    padding          : 15px 0 15px 20px;
+    border           : none;
+    background-color : inherit;
+    color            : #fff;
+    font-size        : 1em;
+}
+#article-list .include-accordion li button:hover {
+    background-color : rgb(42, 79, 124);
+}
+#article-list .include-accordion li button::before,
+#article-list .include-accordion li button::after {
+    content          : "";
+    position         : absolute;
+    top              : 20px;
+    transition       : 1s;
+    width            : 1.5px;
+    height           : 8px;
+    background-color : #fff;
+}
+#article-list .include-accordion li button::before {
+    transform : rotate(-45deg);
+    right     : 35px;
+}
+#article-list .include-accordion li button::after {
+    transform : rotate(45deg);
+    right     : 30px;
+}
+#article-list .include-accordion li.active button::before {
+    transform  : rotate(-135deg);
+    transition : 1s;
+}
+#article-list .include-accordion li.active button::after {
+    transform  : rotate(135deg);
+    transition : 1s;
+}
+#article-list ul.active { 
+    overflow-y : auto;
+}
+
+/* TOPへ戻るボタン */
+#back-top-btn {
+    text-align : center;
+}
+#back-top-btn a {
+    padding          : 1rem 1.5rem;
+    background-color : #fff;
+    color            : rgb(27, 113, 205);
+    border-radius    : 30px;
+    font-weight      : 550;
+}
+
+/* footer */
+#footer .copyright {
+    text-align : center;
+    margin-top : 5rem;
+    color      : #fff;
+}
+
+/* sp画面 */
+@media screen and (max-width :900px) {
+    /* 設定 */
+    section {
+        margin : 2rem 0;
+    }
+    .wrapper {
+        padding : 0 1rem;
+    }
+    .section-title {
+        margin-bottom : 1rem;
+    }
+    .section-title span {
+        display : block;
+        color   : #fff;
+    }
+    .section-title .en {
+        font-size : 1.5rem;
+    }
+    .section-title .ja {
+        font-size : 1rem;
+    }
+
+    /* ヘッダー */
+    #pc-header {
+        display : none;
+    }
+    #sp-header {
+        display          : block;
+        margin           : 0 auto;
+        padding          : 1rem 2rem;
+        background-color : #fff;
+    }
+    #sp-header .sp-header-flex {
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+    }
+    #sp-header .logo-area a {
+        color     : rgb(74, 74, 74);
+        font-size : 1.5rem;
+    }
+    #sp-header .img-area {
+        max-width : 30px;
+    }
+    #sp-header .img-area img {
+        width : 100%;
+    }
+}
+
+@media screen and (max-width :750px) {
+    /* 設定 */
+    .flex {
+        flex-direction : column-reverse;
+    }
+
+    /* About List */
+    #about-list .list li {
+        width : 50%;
+    }
+
+    /* Article List */
+    #article-list .include-accordion {
+        margin : 0;
+    }
+}
+
+@media screen and (max-width :500px) {
+    /* 設定 */
+    .flex {
+        flex-direction : column-reverse;
+    }
+
+    /* About List */
+    #about-list .list li {
+        width : 70%;
+    }
+
+    /* Course List & Recommend Books */
+    .list .card .img-area {
+        width : 200px;
+    }
+
+    /* Article List */
+    #article-list .include-accordion {
+        width : 200px;
+    }
+}
